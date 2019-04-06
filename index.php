@@ -23,6 +23,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script type="text/javascript" src="js/jquery.contentcarousel.js"></script>
 </head>
 <body>
+	<?php
+		session_start();
+	?>
 <div class="header">	
   <div class="wrap"> 
 	  <div class="header-top">
@@ -37,6 +40,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					 <!--<li><a href="services.html"><span>Services</span></a></li>
 					 <li class="has-sub"><a href="work.html"><span>My Work</span></a></li>-->
 					 <li class="last"><a href="contact.html"><span>Contact</span></a></li>
+					 <li><a href="cart.php">Cart</a></li>
+
 					 <div class="clear"></div>
 				</ul>
 		    </div>
@@ -97,6 +102,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<h3><a href="#">Lorem ipsum dolor</a></h3>
 								 <h4>
 									<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</span>
+									<p>$1.00</p>
+									<p><a href="addtocart.php" class="btn btn-primary" role="button">Add to Cart</a></p>
 								</h4>
 							</div>
 						  </div>
@@ -106,6 +113,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<h3><a href="#">Lorem ipsum dolor</a></h3>
 								<h4>
 								    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</span>
+								    <p>$1.00</p>
+								    <p><a href="addtocart.php" class="btn btn-primary" role="button">Add to Cart</a></p>
 								</h4>
 							</div>
 						</div>
@@ -115,6 +124,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							    <h3><a href="#">Lorem ipsum dolor</a></h3>
 								<h4>
 									<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</span>
+									<p>$1.00</p>
+									<p><a href="addtocart.php" class="btn btn-primary" role="button">Add to Cart</a></p>
 								</h4>
 							</div>
 						</div>
@@ -124,6 +135,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<h3><a href="#">Lorem ipsum dolor</a></h3>
 								<h4>
 									<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</span>
+									<p>$1.00</p>
+									<p><a href="addtocart.php" class="btn btn-primary" role="button">Add to Cart</a></p>
 								</h4>
 						     </div>
 						</div>
@@ -133,6 +146,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<h3><a href="#">Lorem ipsum dolor</a></h3>
 								<h4>
 									<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</span>
+									<p>$1.00</p>
+							        <p><a href="addtocart.php" class="btn btn-primary" role="button">Add to Cart</a></p>
+
 								</h4>
 							</div>
 						</div>
@@ -142,6 +158,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<h3><a href="#">Lorem ipsum dolor</a></h3>
 								<h4>
 									<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</span>
+									<p>$1.00</p>
+									<p><a href="addtocart.php" class="btn btn-primary" role="button">Add to Cart</a></p>
 								</h4>
 							</div>
 						</div>
@@ -151,6 +169,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<h3><a href="#">Lorem ipsum dolor</a></h3>
 								<h4>
 									<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</span>
+							        <p>$1.00</p>
+									<p><a href="addtocart.php" class="btn btn-primary" role="button">Add to Cart</a></p>
 								</h4>
 							</div>
 						</div>
@@ -160,6 +180,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<h3><a href="#">Lorem ipsum dolor</a></h3>
 								<h4>
 									<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</span>
+							        <p>$1.00</p>
+									<p><a href="addtocart.php" class="btn btn-primary" role="button">Add to Cart</a></p>
 								</h4>								
 							 </div>
 						</div>
