@@ -93,62 +93,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 		   	<div class="clear"></div> 
 		</div>
-<div class="content-middle">
+<!-- 		<div class="content-middle">
 			<div class="our-mission" id="team">
 			   <div id="ca-container" class="ca-container">
 				  <div class="ca-wrapper">
 				         <div class="ca-item ca-item-1">
 						   <div class="ca-item-main">
 								<div class="ca-icon"> </div>
-								
-								<!--<h3><a href="#">Lorem ipsum dolor</a></h3>
+								<h3><a href="#">Lorem ipsum dolor</a></h3>
 								 <h4>
 									<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</span>
 									<p>$1.00</p>
 									<p><a href="addtocart.php" class="btn btn-primary" role="button">Add to Cart</a></p>
-								</h4>-->	
-
-								<center><table>
-									<col width="200">
-									<col width="50">
-									<col width="50">
-									<col width="50">
-									<col width="100">
-									
-								<tr>
-									<th> Wallpaper</th>
-									<th> Photo ID </th>
-									<th> Name </th>
-									<th> Price </th>
-									<th> Description </th>
-
-								</tr>
-
-								<?php 
-									//connect to DB
-									//include("includes/db_connection.php");
-									$cart_id=$_POST['q'];
-									include "../../sqlfiles/db_connection.php";
-									$q = "SELECT * FROM main";
-									$r = $conn->query($q);
-									
-									while ($row = $r->fetch_assoc()){
-										echo "<tr>";
-											//echo('<img alt="' . $row['img'] . '" src="doImage.php?photoID=' . $row['photoID'] . '&resize=280,215" />');
-											echo "<td><img src='images/".$row['name'].".jpg'></td>";
-											echo "<td>".$row['photoID']."</td>";
-											echo "<td>".$row['name']."</td>";
-											echo "<td>".$row['price']."</td>";
-											echo "<td>".$row['description']."</td>";
-											echo "<td><a onClick=\"javascript: return confirm('Buy item?');\" 
-											//           href='buy.php?photoID_TBD=".$row['photoID']."'>Buy Now</a></td>";
-										echo "</tr>";
-									}
-								?>					
-								</table><center> 
+								</h4>
 							</div>
 						  </div>
-<!-- 								<div class="ca-item ca-item-2">
+						<div class="ca-item ca-item-2">
 							<div class="ca-item-main">
 								<div class="ca-icon"> </div>
 								<h3><a href="#">Lorem ipsum dolor</a></h3>
@@ -225,15 +185,56 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<p><a href="addtocart.php" class="btn btn-primary" role="button">Add to Cart</a></p>
 								</h4>								
 							 </div>
-						</div> -->
+						</div>
 			    </div>
 			 </div>
 				    <script type="text/javascript">
 						$('#ca-container').contentcarousel();
 					</script>
-		</div>
+		</div> -->
 
-	
+	<div>	
+		<h1>View Products</h1>		
+
+		<center><table>
+			<col width="500">
+			<col width="50">
+			<col width="50">
+			<col width="50">
+			<col width="300">
+
+			<tr>
+			<th> Wallpaper</th>
+			<th> Photo ID </th>
+			<th> Name </th>
+			<th> Price </th>
+			<th> Description </th>
+
+			</tr>
+
+			<?php 
+			//connect to DB
+			//include("includes/db_connection.php");
+			$cart_id=$_POST['q'];
+			include "../../sqlfiles/db_connection.php";
+			$q = "SELECT * FROM main";
+			$r = $conn->query($q);
+
+			while ($row = $r->fetch_assoc()){
+				echo "<tr>";
+					//echo('<img alt="' . $row['img'] . '" src="doImage.php?photoID=' . $row['photoID'] . '&resize=280,215" />');
+					echo "<td><img src='images/".$row['name'].".jpg'></td>";
+					echo "<td>".$row['photoID']."</td>";
+					echo "<td>".$row['name']."</td>";
+					echo "<td>".$row['price']."</td>";
+					echo "<td>".$row['description']."</td>";
+					echo "<td><a onClick=\"javascript: return confirm('Buy item?');\" 
+					//           href='buy.php?photoID_TBD=".$row['photoID']."'>Buy Now</a></td>";
+				echo "</tr>";
+			}
+			?>					
+			</table><center>
+	</div> <!--content -->
 
 	  </div><br>
 	    <!--<div class="content-middle-bottom">
