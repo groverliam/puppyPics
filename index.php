@@ -198,14 +198,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 		<center><table>
 			<col width="500">
-			<col width="100">
+			<!--<col width="100">-->
 			<col width="100">
 			<col width="100">
 			<col width="300">
 
 			<tr>
 			<th> Wallpaper</th>
-			<th> Photo ID </th>
+			<!--<th> Photo ID </th>-->
 			<th> Name </th>
 			<th> Price </th>
 			<th> Description </th>
@@ -224,7 +224,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				echo "<tr>";
 					//echo('<img alt="' . $row['img'] . '" src="doImage.php?photoID=' . $row['photoID'] . '&resize=280,215" />');
 					echo "<td><img src='images/".$row['name'].".jpg'></td>";
-					echo "<td>".$row['photoID']."</td>";
+					//echo "<td>".$row['photoID']."</td>";
 					echo "<td>".$row['name']."</td>";
 					echo "<td>".$row['price']."</td>";
 					echo "<td>".$row['description']."</td>";
