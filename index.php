@@ -109,12 +109,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</h4>-->	
 
 								<center><table>
+									<col width="200">
 									<col width="50">
 									<col width="50">
 									<col width="50">
 									<col width="100">
 									
 								<tr>
+									<th> Wallpaper</th>
 									<th> Photo ID </th>
 									<th> Name </th>
 									<th> Price </th>
@@ -132,6 +134,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									
 									while ($row = $r->fetch_assoc()){
 										echo "<tr>";
+											echo('<img alt="' . $row['img'] . '" src="doImage.php?photoID=' . $row['photoID'] . '&resize=280,215" />');
 											echo "<td>".$row['photoID']."</td>";
 											echo "<td>".$row['name']."</td>";
 											echo "<td>".$row['price']."</td>";
