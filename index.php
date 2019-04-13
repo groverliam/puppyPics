@@ -134,7 +134,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									
 									while ($row = $r->fetch_assoc()){
 										echo "<tr>";
-											echo('<img alt="' . $row['img'] . '" src="doImage.php?photoID=' . $row['photoID'] . '&resize=280,215" />');
+											//echo('<img alt="' . $row['img'] . '" src="doImage.php?photoID=' . $row['photoID'] . '&resize=280,215" />');
+											echo "<td>".$row['img']."</td>";
 											echo "<td>".$row['photoID']."</td>";
 											echo "<td>".$row['name']."</td>";
 											echo "<td>".$row['price']."</td>";
