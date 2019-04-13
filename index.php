@@ -36,8 +36,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			 </div>
 			 <div class="cssmenu">
 				<ul>
-					 <li class="active"><a href="index.php"><span>Home</span></a></li>
-					 <!--li><a href="products.html"><span>Products</span></a></li>
+					 <!--li class="active"><a href="index.php"><span>Home</span></a></li>
+					 <li><a href="products.html"><span>Products</span></a></li>
 					 <<li><a href="services.html"><span>Services</span></a></li>
 					 <li class="has-sub"><a href="work.html"><span>My Work</span></a></li>>
 					 <li class="last"><a href="contact.html"><span>Contact</span></a></li>
