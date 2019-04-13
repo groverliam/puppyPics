@@ -198,9 +198,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 		<center><table>
 			<col width="500">
-			<col width="50">
-			<col width="50">
-			<col width="50">
+			<col width="100">
+			<col width="100">
+			<col width="100">
 			<col width="300">
 
 			<tr>
@@ -233,7 +233,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				echo "</tr>";
 			}
 			?>					
-			</table><center>
+			</table></center>
 	</div> <!--content -->
 
 	  </div><br>
