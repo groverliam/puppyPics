@@ -234,17 +234,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						echo "<td>"
 						?>
 							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-								<input type="hidden" name="cmd" value="_xclick">
-								<input type="hidden" name="business" value="groverliam@gmail.com">
-								<input type="hidden" name="lc" value="US">
-								<input type="hidden" name="item_name" value="Pic">
-								<input type="hidden" name="amount" value="0.75">
-								<input type="hidden" name="currency_code" value="USD">
-								<input type="hidden" name="button_subtype" value="services">
-								<input type="hidden" name="no_note" value="0">
-								<input type="hidden" name="tax_rate" value="0.000">
-								<input type="hidden" name="shipping" value="0.00">
-								<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+								<input type="hidden" name="cmd" value="_s-xclick">
+								<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
 								<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 								<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 							</form>
