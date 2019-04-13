@@ -88,9 +88,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				 desktop backgrounds of dogs that need a home. If you don't have the resources to adopt one of these cuddly
 				 pups, buy a desktop photo and fund their shelter!</p>
 			</div>
-			<div class="rsidebar span_1_of_3">
-				 <img src="images/graph.png" alt=""/> 
-			</div>
 		   	<div class="clear"></div> 
 		</div>
 <!-- 		<div class="content-middle">
