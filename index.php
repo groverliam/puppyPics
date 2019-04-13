@@ -93,7 +93,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 		   	<div class="clear"></div> 
 		</div>
-		<div class="content-middle">
+<!-- 		<div class="content-middle">
 			<div class="our-mission" id="team">
 			   <div id="ca-container" class="ca-container">
 				  <div class="ca-wrapper">
@@ -191,7 +191,53 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				    <script type="text/javascript">
 						$('#ca-container').contentcarousel();
 					</script>
-		</div>
+		</div> -->
+		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>SE357</title>
+<link rel="stylesheet" href="includes/admin.css" type="text/css" media="screen" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+
+	<div id="content" >	
+		<h1>View Products</h1>		
+
+		<center><table>
+			<col width="50">
+			<col width="50">
+			<col width="50">
+			<col width="100">
+			
+		<tr>
+			<th> Photo ID </th>
+			<th> Name </th>
+			<th> Price </th>
+			<th> Description </th>
+
+		</tr>
+
+		<?php 
+			//connect to DB
+			include("includes/db_connection.php");
+
+			$q = "SELECT * FROM main";
+			$r = $conn->query($q);
+			
+			while ($row = $r->fetch_assoc()){
+				echo "<tr>";
+					echo "<td>".$row['photoID']."</td>";
+					echo "<td>".$row['name']."</td>";
+					echo "<td>".$row['price']."</td>";
+					echo "<td>".$row['description']."</td>";
+					//echo "<td><a onClick=\"javascript: return confirm('Do you really want to remove this item?');\" 
+					//           href='delete_user.php?uname_TBD=".$row['uname']."'>Delete</a></td>";
+				echo "</tr>";
+			}
+		?>					
+		</table><center> 
+	</div> <!--content -->
+
 	  </div><br>
 	    <!--<div class="content-middle-bottom">
 			<div class="our-mission" id="team1">
