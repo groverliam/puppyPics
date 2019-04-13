@@ -219,8 +219,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 		<?php 
 			//connect to DB
-			include("includes/db_connection.php");
-
+			//include("includes/db_connection.php");
+			$cart_id=$_POST['q'];
+			include "../../sqlfiles/db_connection.php";
 			$q = "SELECT * FROM main";
 			$r = $conn->query($q);
 			
@@ -230,8 +231,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					echo "<td>".$row['name']."</td>";
 					echo "<td>".$row['price']."</td>";
 					echo "<td>".$row['description']."</td>";
-					//echo "<td><a onClick=\"javascript: return confirm('Do you really want to remove this item?');\" 
-					//           href='delete_user.php?uname_TBD=".$row['uname']."'>Delete</a></td>";
+					echo "<td><a onClick=\"javascript: return confirm('Buy item?');\" 
+					//           href='buy.php?photoID_TBD=".$row['photoID']."'>Buy Now</a></td>";
 				echo "</tr>";
 			}
 		?>					
