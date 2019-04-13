@@ -25,6 +25,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <body>
 	<?php
 		session_start();
+		$_SESSION = array();
 	?>
 <div class="header">	
   <div class="wrap"> 
