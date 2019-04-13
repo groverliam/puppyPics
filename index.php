@@ -49,7 +49,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	      </div>
 		  <div class="header-right">
 			<div id="loginContainer">
-				 <span>Join</span><a id="loginButton"><img src="images/plus.png" alt="" /></a>   
+				 <span>Newsletter</span><a id="loginButton"><img src="images/plus.png" alt="" /></a>   
 				     <div id="loginBox">                
 				          <form id="loginForm">
 				             <div>
