@@ -231,6 +231,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					//echo "<td><a onClick=\"javascript: return confirm('Buy item?');\" 
 					//           href='buy.php?photoID_TBD=".$row['photoID']."'>Buy Now</a></td>";
 					if($row['photoID'] = 123658){
+						echo "<td>"
 						?>
 						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 						<input type="hidden" name="cmd" value="_s-xclick">
@@ -239,6 +240,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 						</form>
 					<?php
+					"</td>";
 					}
 					else{
 						echo "<td><a onClick=\"javascript: return confirm('Buy item?');\" 
