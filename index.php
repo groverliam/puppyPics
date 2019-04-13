@@ -193,7 +193,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</script>
 		</div> -->
 
-	<div id="content" >	
+	<div>	
 		<h1>View Products</h1>		
 
 		<center><table>
